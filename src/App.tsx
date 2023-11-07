@@ -3,6 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log("NODE_ENV", process.env.NODE_ENV);
+  console.log("REACT_APP_ENVIRONMENT", process.env.REACT_APP_ENVIRONMENT);
+  // Solzuione 1
+  // SCRIPT: "build": "craco build",
+  // CLI COMMAND: REACT_APP_ENVIRONMENT=test npm run build
+
+  // Solzuione 2
+  // SCRIPT: "build": "REACT_APP_ENVIRONMENT=$npm_config_environment craco build",
+  // CLI COMMAND: npm run build --environment=test
+  
   return (
     <div className="App">
       <header className="App-header">
